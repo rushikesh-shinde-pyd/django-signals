@@ -16,7 +16,7 @@
         </h5>
         
         {% for message in messages %}
-            <p style="color: red;"><span style="font-weight: bold;"> {{ message.tags | title }}: </span> {{ message }} </p>
+            <p style="color: lime;"><span style="font-weight: bold;"> {{ message.tags | title }}: </span> {{ message }} </p>
         {% endfor %}
         
         {% block body %} {% endblock %}
