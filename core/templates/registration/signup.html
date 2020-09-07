@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Signup - Django Signals {% endblock %}
+
+{% block body %} 
+
+    <form name="signup-form" action="{% url 'core:signup' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Signup" name="signup-submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block body %} 
+
+    <h4>Available user list</h4>
+    <ol>
+
+        {% for user in user_list %}
+            <li> {{ user.username | title }} </li>
+        {% endfor %}
+
+    </ol>
+
+
+{% endblock %}
